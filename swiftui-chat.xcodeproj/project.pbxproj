@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		0C791ABF2A834B9200DA08D3 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791ABE2A834B9200DA08D3 /* CustomTabBar.swift */; };
 		0C791AC12A83755D00DA08D3 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AC02A83755D00DA08D3 /* TabBarButton.swift */; };
+		0C791AC32A83807700DA08D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C791AC22A83807700DA08D3 /* GoogleService-Info.plist */; };
+		0C791AC62A83829400DA08D3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0C791AC52A83829400DA08D3 /* FirebaseAuth */; };
+		0C791AC82A83829400DA08D3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0C791AC72A83829400DA08D3 /* FirebaseFirestore */; };
+		0C791ACA2A83829400DA08D3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0C791AC92A83829400DA08D3 /* FirebaseFirestoreSwift */; };
+		0C791ACC2A83829400DA08D3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0C791ACB2A83829400DA08D3 /* FirebaseStorage */; };
+		0C791ACE2A83832000DA08D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791ACD2A83832000DA08D3 /* AppDelegate.swift */; };
+		0C791AD12A83A0E400DA08D3 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AD02A83A0E400DA08D3 /* AuthViewModel.swift */; };
 		0CAD05442A828F29007587AF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD05432A828F29007587AF /* Fonts.swift */; };
 		0CEC1CD52A820DCA004076E0 /* swiftui_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */; };
 		0CEC1CD72A820DCA004076E0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD62A820DCA004076E0 /* RootView.swift */; };
@@ -19,6 +26,10 @@
 /* Begin PBXFileReference section */
 		0C791ABE2A834B9200DA08D3 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		0C791AC02A83755D00DA08D3 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		0C791AC22A83807700DA08D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Chat App/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C791ACD2A83832000DA08D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C791ACF2A83915A00DA08D3 /* swiftui-chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "swiftui-chat.entitlements"; sourceTree = "<group>"; };
+		0C791AD02A83A0E400DA08D3 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		0CAD05432A828F29007587AF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0CEC1CD12A820DCA004076E0 /* swiftui-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_chatApp.swift; sourceTree = "<group>"; };
@@ -33,6 +44,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C791AC62A83829400DA08D3 /* FirebaseAuth in Frameworks */,
+				0C791ACC2A83829400DA08D3 /* FirebaseStorage in Frameworks */,
+				0C791AC82A83829400DA08D3 /* FirebaseFirestore in Frameworks */,
+				0C791ACA2A83829400DA08D3 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +82,10 @@
 		0CEC1CD32A820DCA004076E0 /* swiftui-chat */ = {
 			isa = PBXGroup;
 			children = (
+				0C791ACF2A83915A00DA08D3 /* swiftui-chat.entitlements */,
+				0C791ACD2A83832000DA08D3 /* AppDelegate.swift */,
 				0CEC1CE82A82713F004076E0 /* Info.plist */,
+				0C791AC22A83807700DA08D3 /* GoogleService-Info.plist */,
 				0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */,
 				0CEC1CD62A820DCA004076E0 /* RootView.swift */,
 				0CEC1CE22A820DDC004076E0 /* Views */,
@@ -101,6 +119,7 @@
 		0CEC1CE32A820DF2004076E0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0C791AD02A83A0E400DA08D3 /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -150,6 +169,12 @@
 			dependencies = (
 			);
 			name = "swiftui-chat";
+			packageProductDependencies = (
+				0C791AC52A83829400DA08D3 /* FirebaseAuth */,
+				0C791AC72A83829400DA08D3 /* FirebaseFirestore */,
+				0C791AC92A83829400DA08D3 /* FirebaseFirestoreSwift */,
+				0C791ACB2A83829400DA08D3 /* FirebaseStorage */,
+			);
 			productName = "swiftui-chat";
 			productReference = 0CEC1CD12A820DCA004076E0 /* swiftui-chat.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +203,9 @@
 				Base,
 			);
 			mainGroup = 0CEC1CC82A820DCA004076E0;
+			packageReferences = (
+				0C791AC42A83829400DA08D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0CEC1CD22A820DCA004076E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,6 +222,7 @@
 			files = (
 				0CEC1CDC2A820DCB004076E0 /* Preview Assets.xcassets in Resources */,
 				0CEC1CD92A820DCB004076E0 /* Assets.xcassets in Resources */,
+				0C791AC32A83807700DA08D3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C791ACE2A83832000DA08D3 /* AppDelegate.swift in Sources */,
 				0C791ABF2A834B9200DA08D3 /* CustomTabBar.swift in Sources */,
 				0CEC1CD72A820DCA004076E0 /* RootView.swift in Sources */,
+				0C791AD12A83A0E400DA08D3 /* AuthViewModel.swift in Sources */,
 				0CAD05442A828F29007587AF /* Fonts.swift in Sources */,
 				0C791AC12A83755D00DA08D3 /* TabBarButton.swift in Sources */,
 				0CEC1CD52A820DCA004076E0 /* swiftui_chatApp.swift in Sources */,
@@ -334,6 +365,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swiftui-chat/swiftui-chat.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftui-chat/Preview Content\"";
@@ -353,6 +386,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Home.swiftui-chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,6 +398,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swiftui-chat/swiftui-chat.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftui-chat/Preview Content\"";
@@ -383,6 +419,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Home.swiftui-chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -411,6 +448,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C791AC42A83829400DA08D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C791AC52A83829400DA08D3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C791AC42A83829400DA08D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0C791AC72A83829400DA08D3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C791AC42A83829400DA08D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0C791AC92A83829400DA08D3 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C791AC42A83829400DA08D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		0C791ACB2A83829400DA08D3 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C791AC42A83829400DA08D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0CEC1CC92A820DCA004076E0 /* Project object */;
 }
