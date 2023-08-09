@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C791ABF2A834B9200DA08D3 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791ABE2A834B9200DA08D3 /* CustomTabBar.swift */; };
+		0C791AC12A83755D00DA08D3 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AC02A83755D00DA08D3 /* TabBarButton.swift */; };
 		0CAD05442A828F29007587AF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD05432A828F29007587AF /* Fonts.swift */; };
 		0CEC1CD52A820DCA004076E0 /* swiftui_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */; };
 		0CEC1CD72A820DCA004076E0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD62A820DCA004076E0 /* RootView.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C791ABE2A834B9200DA08D3 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		0C791AC02A83755D00DA08D3 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		0CAD05432A828F29007587AF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0CEC1CD12A820DCA004076E0 /* swiftui-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_chatApp.swift; sourceTree = "<group>"; };
@@ -35,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C791ABD2A834B7600DA08D3 /* Custom Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				0C791ABE2A834B9200DA08D3 /* CustomTabBar.swift */,
+				0C791AC02A83755D00DA08D3 /* TabBarButton.swift */,
+			);
+			path = "Custom Tab Bar";
+			sourceTree = "<group>";
+		};
 		0CEC1CC82A820DCA004076E0 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +93,7 @@
 		0CEC1CE22A820DDC004076E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0C791ABD2A834B7600DA08D3 /* Custom Tab Bar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,8 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C791ABF2A834B9200DA08D3 /* CustomTabBar.swift in Sources */,
 				0CEC1CD72A820DCA004076E0 /* RootView.swift in Sources */,
 				0CAD05442A828F29007587AF /* Fonts.swift in Sources */,
+				0C791AC12A83755D00DA08D3 /* TabBarButton.swift in Sources */,
 				0CEC1CD52A820DCA004076E0 /* swiftui_chatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
