@@ -11,6 +11,9 @@ import SwiftUI
 struct RootView: View {
 
     @State var selectedTab: Tabs = .contacts
+    
+    @State var isOnboarding = !AuthViewModel.isUserLoggedIn()
+    // The ! flips the Bool to the opposite
 
     var body: some View {
         
@@ -25,7 +28,13 @@ struct RootView: View {
             CustomTabBar(selectedTab: $selectedTab)
             
         }
-        .padding()
+        .fullScreenCover(isPresented: $isOnboarding) {
+            // On dismiss
+        } content: {
+            // The onboarding sequence
+            OnboardingContainerView(isOnboarding: $isOnboarding)
+        }
+
     }
     
     // The next init code is used to find out what names for fonts are used by the system (they can be different from the files names of the fonts)
@@ -40,8 +49,4 @@ struct RootView: View {
 //    }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        RootView()
-    }
-}
+//

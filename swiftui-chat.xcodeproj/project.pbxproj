@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C5FBDC02A8619400058959A /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5FBDBF2A8619400058959A /* ContactsViewModel.swift */; };
 		0C791ABF2A834B9200DA08D3 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791ABE2A834B9200DA08D3 /* CustomTabBar.swift */; };
 		0C791AC12A83755D00DA08D3 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AC02A83755D00DA08D3 /* TabBarButton.swift */; };
 		0C791AC32A83807700DA08D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C791AC22A83807700DA08D3 /* GoogleService-Info.plist */; };
@@ -16,7 +17,18 @@
 		0C791ACC2A83829400DA08D3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0C791ACB2A83829400DA08D3 /* FirebaseStorage */; };
 		0C791ACE2A83832000DA08D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791ACD2A83832000DA08D3 /* AppDelegate.swift */; };
 		0C791AD12A83A0E400DA08D3 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AD02A83A0E400DA08D3 /* AuthViewModel.swift */; };
+		0C791AD42A83C36C00DA08D3 /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AD32A83C36C00DA08D3 /* OnboardingContainerView.swift */; };
+		0C791AD62A83CB4D00DA08D3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AD52A83CB4D00DA08D3 /* WelcomeView.swift */; };
+		0C791AD82A83CB8B00DA08D3 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AD72A83CB8B00DA08D3 /* PhoneNumberView.swift */; };
+		0C791ADA2A83CBAC00DA08D3 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AD92A83CBAC00DA08D3 /* VerificationView.swift */; };
+		0C791ADC2A83CC0500DA08D3 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791ADB2A83CC0500DA08D3 /* CreateProfileView.swift */; };
+		0C791ADE2A83CC2500DA08D3 /* SyncContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791ADD2A83CC2500DA08D3 /* SyncContactsView.swift */; };
 		0CAD05442A828F29007587AF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD05432A828F29007587AF /* Fonts.swift */; };
+		0CAE39032A84B0D600AA5956 /* OnboardingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE39022A84B0D600AA5956 /* OnboardingButtonStyle.swift */; };
+		0CAE390F2A84B58500AA5956 /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE390C2A84B58500AA5956 /* LexendDeca-Bold.ttf */; };
+		0CAE39102A84B58500AA5956 /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE390D2A84B58500AA5956 /* LexendDeca-Regular.ttf */; };
+		0CAE39112A84B58500AA5956 /* LexendDeca-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE390E2A84B58500AA5956 /* LexendDeca-SemiBold.ttf */; };
+		0CAE39132A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE39122A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift */; };
 		0CEC1CD52A820DCA004076E0 /* swiftui_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */; };
 		0CEC1CD72A820DCA004076E0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD62A820DCA004076E0 /* RootView.swift */; };
 		0CEC1CD92A820DCB004076E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD82A820DCB004076E0 /* Assets.xcassets */; };
@@ -24,13 +36,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C5FBDBF2A8619400058959A /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		0C791ABE2A834B9200DA08D3 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		0C791AC02A83755D00DA08D3 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		0C791AC22A83807700DA08D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Chat App/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C791ACD2A83832000DA08D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C791ACF2A83915A00DA08D3 /* swiftui-chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "swiftui-chat.entitlements"; sourceTree = "<group>"; };
 		0C791AD02A83A0E400DA08D3 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		0C791AD32A83C36C00DA08D3 /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		0C791AD52A83CB4D00DA08D3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		0C791AD72A83CB8B00DA08D3 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		0C791AD92A83CBAC00DA08D3 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		0C791ADB2A83CC0500DA08D3 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
+		0C791ADD2A83CC2500DA08D3 /* SyncContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncContactsView.swift; sourceTree = "<group>"; };
 		0CAD05432A828F29007587AF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		0CAE39022A84B0D600AA5956 /* OnboardingButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButtonStyle.swift; sourceTree = "<group>"; };
+		0CAE390C2A84B58500AA5956 /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
+		0CAE390D2A84B58500AA5956 /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
+		0CAE390E2A84B58500AA5956 /* LexendDeca-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-SemiBold.ttf"; sourceTree = "<group>"; };
+		0CAE39122A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileTextfieldStyle.swift; sourceTree = "<group>"; };
 		0CEC1CD12A820DCA004076E0 /* swiftui-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_chatApp.swift; sourceTree = "<group>"; };
 		0CEC1CD62A820DCA004076E0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -61,6 +85,19 @@
 				0C791AC02A83755D00DA08D3 /* TabBarButton.swift */,
 			);
 			path = "Custom Tab Bar";
+			sourceTree = "<group>";
+		};
+		0C791AD22A83C33B00DA08D3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0C791AD32A83C36C00DA08D3 /* OnboardingContainerView.swift */,
+				0C791AD52A83CB4D00DA08D3 /* WelcomeView.swift */,
+				0C791AD72A83CB8B00DA08D3 /* PhoneNumberView.swift */,
+				0C791AD92A83CBAC00DA08D3 /* VerificationView.swift */,
+				0C791ADB2A83CC0500DA08D3 /* CreateProfileView.swift */,
+				0C791ADD2A83CC2500DA08D3 /* SyncContactsView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		0CEC1CC82A820DCA004076E0 = {
@@ -111,6 +148,7 @@
 		0CEC1CE22A820DDC004076E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0C791AD22A83C33B00DA08D3 /* Onboarding */,
 				0C791ABD2A834B7600DA08D3 /* Custom Tab Bar */,
 			);
 			path = Views;
@@ -120,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				0C791AD02A83A0E400DA08D3 /* AuthViewModel.swift */,
+				0C5FBDBF2A8619400058959A /* ContactsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -142,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				0CAD05432A828F29007587AF /* Fonts.swift */,
+				0CAE39022A84B0D600AA5956 /* OnboardingButtonStyle.swift */,
+				0CAE39122A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -149,6 +190,9 @@
 		0CEC1CE72A820EB5004076E0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				0CAE390C2A84B58500AA5956 /* LexendDeca-Bold.ttf */,
+				0CAE390D2A84B58500AA5956 /* LexendDeca-Regular.ttf */,
+				0CAE390E2A84B58500AA5956 /* LexendDeca-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -220,8 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAE39102A84B58500AA5956 /* LexendDeca-Regular.ttf in Resources */,
 				0CEC1CDC2A820DCB004076E0 /* Preview Assets.xcassets in Resources */,
+				0CAE39112A84B58500AA5956 /* LexendDeca-SemiBold.ttf in Resources */,
 				0CEC1CD92A820DCB004076E0 /* Assets.xcassets in Resources */,
+				0CAE390F2A84B58500AA5956 /* LexendDeca-Bold.ttf in Resources */,
 				0C791AC32A83807700DA08D3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,11 +280,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAE39132A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift in Sources */,
+				0C791ADE2A83CC2500DA08D3 /* SyncContactsView.swift in Sources */,
 				0C791ACE2A83832000DA08D3 /* AppDelegate.swift in Sources */,
+				0C791AD42A83C36C00DA08D3 /* OnboardingContainerView.swift in Sources */,
 				0C791ABF2A834B9200DA08D3 /* CustomTabBar.swift in Sources */,
+				0CAE39032A84B0D600AA5956 /* OnboardingButtonStyle.swift in Sources */,
 				0CEC1CD72A820DCA004076E0 /* RootView.swift in Sources */,
+				0C791AD62A83CB4D00DA08D3 /* WelcomeView.swift in Sources */,
 				0C791AD12A83A0E400DA08D3 /* AuthViewModel.swift in Sources */,
+				0C791ADC2A83CC0500DA08D3 /* CreateProfileView.swift in Sources */,
+				0C791AD82A83CB8B00DA08D3 /* PhoneNumberView.swift in Sources */,
 				0CAD05442A828F29007587AF /* Fonts.swift in Sources */,
+				0C791ADA2A83CBAC00DA08D3 /* VerificationView.swift in Sources */,
+				0C5FBDC02A8619400058959A /* ContactsViewModel.swift in Sources */,
 				0C791AC12A83755D00DA08D3 /* TabBarButton.swift in Sources */,
 				0CEC1CD52A820DCA004076E0 /* swiftui_chatApp.swift in Sources */,
 			);

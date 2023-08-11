@@ -13,11 +13,15 @@
 			</array>
 		</dict>
 	</array>
+	<key></key>
+	<string></string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>LexendDeca-Bold.ttf</string>
-		<string>LexendDeca-Regular.ttf</string>
-		<string>LexendDeca-SemiBold.ttf</string>
+		<string>LexendDeca-Bold</string>
+		<string>LexendDeca-Regular</string>
+		<string>LexendDeca-SemiBold</string>
 	</array>
+	<key>ATSApplicationFontsPath</key>
+	<string></string>
 </dict>
 </plist>
