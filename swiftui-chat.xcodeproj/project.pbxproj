@@ -29,6 +29,9 @@
 		0CAE39102A84B58500AA5956 /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE390D2A84B58500AA5956 /* LexendDeca-Regular.ttf */; };
 		0CAE39112A84B58500AA5956 /* LexendDeca-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE390E2A84B58500AA5956 /* LexendDeca-SemiBold.ttf */; };
 		0CAE39132A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE39122A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift */; };
+		0CB814E02A8631E1002304C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB814DF2A8631E1002304C8 /* User.swift */; };
+		0CB814E22A863D0C002304C8 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB814E12A863D0C002304C8 /* DatabaseService.swift */; };
+		0CB814E42A865F49002304C8 /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB814E32A865F49002304C8 /* TextHelper.swift */; };
 		0CEC1CD52A820DCA004076E0 /* swiftui_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */; };
 		0CEC1CD72A820DCA004076E0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD62A820DCA004076E0 /* RootView.swift */; };
 		0CEC1CD92A820DCB004076E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEC1CD82A820DCB004076E0 /* Assets.xcassets */; };
@@ -55,6 +58,9 @@
 		0CAE390D2A84B58500AA5956 /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
 		0CAE390E2A84B58500AA5956 /* LexendDeca-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-SemiBold.ttf"; sourceTree = "<group>"; };
 		0CAE39122A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileTextfieldStyle.swift; sourceTree = "<group>"; };
+		0CB814DF2A8631E1002304C8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0CB814E12A863D0C002304C8 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		0CB814E32A865F49002304C8 /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
 		0CEC1CD12A820DCA004076E0 /* swiftui-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_chatApp.swift; sourceTree = "<group>"; };
 		0CEC1CD62A820DCA004076E0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -166,6 +172,7 @@
 		0CEC1CE42A820E07004076E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0CB814DF2A8631E1002304C8 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 		0CEC1CE52A820E1B004076E0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0CB814E12A863D0C002304C8 /* DatabaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 				0CAD05432A828F29007587AF /* Fonts.swift */,
 				0CAE39022A84B0D600AA5956 /* OnboardingButtonStyle.swift */,
 				0CAE39122A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift */,
+				0CB814E32A865F49002304C8 /* TextHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -280,13 +289,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB814E22A863D0C002304C8 /* DatabaseService.swift in Sources */,
 				0CAE39132A84F5DE00AA5956 /* CreateProfileTextfieldStyle.swift in Sources */,
 				0C791ADE2A83CC2500DA08D3 /* SyncContactsView.swift in Sources */,
 				0C791ACE2A83832000DA08D3 /* AppDelegate.swift in Sources */,
+				0CB814E42A865F49002304C8 /* TextHelper.swift in Sources */,
 				0C791AD42A83C36C00DA08D3 /* OnboardingContainerView.swift in Sources */,
 				0C791ABF2A834B9200DA08D3 /* CustomTabBar.swift in Sources */,
 				0CAE39032A84B0D600AA5956 /* OnboardingButtonStyle.swift in Sources */,
 				0CEC1CD72A820DCA004076E0 /* RootView.swift in Sources */,
+				0CB814E02A8631E1002304C8 /* User.swift in Sources */,
 				0C791AD62A83CB4D00DA08D3 /* WelcomeView.swift in Sources */,
 				0C791AD12A83A0E400DA08D3 /* AuthViewModel.swift in Sources */,
 				0C791ADC2A83CC0500DA08D3 /* CreateProfileView.swift in Sources */,
