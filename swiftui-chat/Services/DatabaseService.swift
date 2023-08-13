@@ -47,6 +47,7 @@ class DatabaseService {
             
             // Retrieve the users that are on the platform
             query.getDocuments { snapshot, error in
+                
                 // Check for errors
                 if error == nil && snapshot != nil {
                     
@@ -70,6 +71,62 @@ class DatabaseService {
         }
     }
     
+    func setUserProfile(firstName: String, lastName: String, image: UIImage?, completion: @escaping (Bool) -> Void) {
+        
+        // TODO: guard against logged out users
+        
+        // Get a reference to Firestore
+        let db = Firestore.firestore()
+        
+        // Set the profile data
+        // TODO: after implementing authentication, instead create a document with the actual user's id
+        let doc = db.collection("users").document()
+        doc.setData(["firstname": firstName, "lastname": lastName])
+        // Checked if an image is passed though
+        if let image = image {
+            
+            // Upload image data
+            // Create storage reference
+            let storageRef = Storage.storage().reference()
+            
+            // Turn our image into data
+            let imageData = image.jpegData(compressionQuality: 0.8)
+            
+            // Check that we were able to convert it to data
+            guard imageData != nil else{
+                return
+            }
+            
+            // Specify the file path and name
+            let path = "images/\(UUID().uuidString).jpg"
+            // Append to data
+            let fileRef = storageRef.child(path)
+            
+            let uploadTask = fileRef.putData(imageData!, metadata: nil) { meta, error in
+                
+                if error == nil && meta != nil {
+                    // Set the image path to the profile
+                    // merge is kind of append, it does not overwrite firstname and lastname
+                    doc.setData(["photo": path], merge: true) { error in
+                        // Checking for successful upload
+                        if error == nil {
+                            completion(true)
+                        }
+                        
+                    }
+                }
+                else {
+                    
+                    // Upload wasn't successful, notify caller
+                    completion(false)
+                }
+            }
+        }
+        // Upload the image data
+        
+        // Set the image path to the profile
+        
+    }
 }
 
 

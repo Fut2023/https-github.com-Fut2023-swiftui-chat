@@ -23,6 +23,7 @@
 		0C791ADA2A83CBAC00DA08D3 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791AD92A83CBAC00DA08D3 /* VerificationView.swift */; };
 		0C791ADC2A83CC0500DA08D3 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791ADB2A83CC0500DA08D3 /* CreateProfileView.swift */; };
 		0C791ADE2A83CC2500DA08D3 /* SyncContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C791ADD2A83CC2500DA08D3 /* SyncContactsView.swift */; };
+		0C8924362A88AA8E0022680F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8924352A88AA8E0022680F /* ImagePicker.swift */; };
 		0CAD05442A828F29007587AF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD05432A828F29007587AF /* Fonts.swift */; };
 		0CAE39032A84B0D600AA5956 /* OnboardingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE39022A84B0D600AA5956 /* OnboardingButtonStyle.swift */; };
 		0CAE390F2A84B58500AA5956 /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE390C2A84B58500AA5956 /* LexendDeca-Bold.ttf */; };
@@ -52,6 +53,7 @@
 		0C791AD92A83CBAC00DA08D3 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		0C791ADB2A83CC0500DA08D3 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
 		0C791ADD2A83CC2500DA08D3 /* SyncContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncContactsView.swift; sourceTree = "<group>"; };
+		0C8924352A88AA8E0022680F /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0CAD05432A828F29007587AF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0CAE39022A84B0D600AA5956 /* OnboardingButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButtonStyle.swift; sourceTree = "<group>"; };
 		0CAE390C2A84B58500AA5956 /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				0C791AD72A83CB8B00DA08D3 /* PhoneNumberView.swift */,
 				0C791AD92A83CBAC00DA08D3 /* VerificationView.swift */,
 				0C791ADB2A83CC0500DA08D3 /* CreateProfileView.swift */,
+				0C8924352A88AA8E0022680F /* ImagePicker.swift */,
 				0C791ADD2A83CC2500DA08D3 /* SyncContactsView.swift */,
 			);
 			path = Onboarding;
@@ -306,6 +309,7 @@
 				0CAD05442A828F29007587AF /* Fonts.swift in Sources */,
 				0C791ADA2A83CBAC00DA08D3 /* VerificationView.swift in Sources */,
 				0C5FBDC02A8619400058959A /* ContactsViewModel.swift in Sources */,
+				0C8924362A88AA8E0022680F /* ImagePicker.swift in Sources */,
 				0C791AC12A83755D00DA08D3 /* TabBarButton.swift in Sources */,
 				0CEC1CD52A820DCA004076E0 /* swiftui_chatApp.swift in Sources */,
 			);
