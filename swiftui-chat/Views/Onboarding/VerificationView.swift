@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine 
 
 struct VerificationView: View {
  
@@ -23,7 +24,7 @@ struct VerificationView: View {
                 .font(Font.titleText)
                 .padding(.top, 52)
             
-            Text("Enter the 4-digit verification code we sent to your device.")
+            Text("Enter the 6-digit verification code we sent to your device.")
                 .font(Font.bodyParagraph)
                 .padding(.top, 12)
             
@@ -37,7 +38,12 @@ struct VerificationView: View {
                 
                 HStack {
                     TextField("", text: $verificationCode)
-                        .font(Font.bodyParagraph) 
+                        .font(Font.bodyParagraph)
+                        .keyboardType(.numberPad) // For entering only numbers
+                        .onReceive(Just(_verificationCode)) { _ in
+                            TextHelper.limitText(&verificationCode, 6)
+                            // The ampersand & means that the verification code is passed by reference (value)
+                        }
                     
                     Spacer()
                     
@@ -56,8 +62,19 @@ struct VerificationView: View {
             Spacer()
             
             Button {
-                // Next step
-                currentStep = .profile
+                // Send the verification code to Firebase
+                AuthViewModel.verifyCode(code: verificationCode) { error in
+                    
+                    if error == nil {
+                        
+                        // Move to the next step
+                        currentStep = .profile
+                    }
+                    else {
+                        // TODO: show error message
+                    }
+                }
+                
             } label: {
                 Text("Next")
             }

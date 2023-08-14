@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key></key>
+	<string></string>
+	<key>ATSApplicationFontsPath</key>
+	<string></string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -13,17 +17,17 @@
 			</array>
 		</dict>
 	</array>
-	<key></key>
-	<string></string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>LexendDeca-Bold</string>
 		<string>LexendDeca-Regular</string>
 		<string>LexendDeca-SemiBold</string>
 	</array>
-	<key>ATSApplicationFontsPath</key>
-	<string></string>
-	<key>NSContactsUsageDescription</key>
-	<string>Sync your contacts to chat with them</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string></string>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>

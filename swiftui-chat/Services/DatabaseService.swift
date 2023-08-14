@@ -8,6 +8,10 @@
 import Foundation
 import Contacts
 import Firebase
+import UIKit
+
+////  Uploading the photo didn't work because "Storage not in scope"
+//// All depending line have been commented out with ////
 
 class DatabaseService {
     
@@ -87,7 +91,7 @@ class DatabaseService {
             
             // Upload image data
             // Create storage reference
-            let storageRef = Storage.storage().reference()
+////            let storageRef = Storage.storage().reference()
             
             // Turn our image into data
             let imageData = image.jpegData(compressionQuality: 0.8)
@@ -100,11 +104,11 @@ class DatabaseService {
             // Specify the file path and name
             let path = "images/\(UUID().uuidString).jpg"
             // Append to data
-            let fileRef = storageRef.child(path)
+            ////             let fileRef = storageRef.child(path)
             
-            let uploadTask = fileRef.putData(imageData!, metadata: nil) { meta, error in
+            ////             let uploadTask = fileRef.putData(imageData!, metadata: nil?) { meta, error in
                 
-                if error == nil && meta != nil {
+            ////                 if error == nil && meta != nil {
                     // Set the image path to the profile
                     // merge is kind of append, it does not overwrite firstname and lastname
                     doc.setData(["photo": path], merge: true) { error in
@@ -126,8 +130,8 @@ class DatabaseService {
         
         // Set the image path to the profile
         
-    }
-}
+////     }
+//// }
 
 
 

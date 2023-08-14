@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct PhoneNumberView: View {
     
@@ -36,12 +37,17 @@ struct PhoneNumberView: View {
                 HStack {
                     TextField("e.g. +1 613 515 0123", text: $phoneNumber)
                         .font(Font.bodyParagraph)
+                        .onReceive(Just(phoneNumber)) { _ in
+                            TextHelper.applyPatternOnNumbers(&phoneNumber,
+                                                             pattern: "+# (###) ###-####",
+                                                             replacementCharacter: "#")
+                        }
                     
                     Spacer()
                     
                     Button {
                         // Clear text field (the circle on the right)
-                        
+                        phoneNumber = ""
                     } label: {
                         Image(systemName: "multiply.circle.fill")
                     }
@@ -54,8 +60,22 @@ struct PhoneNumberView: View {
             Spacer()
             
             Button {
-                // Next step
-                currentStep = .verification
+                // Sent their phone number to Firebase Auth
+                
+                AuthViewModel.sendPhoneNumber(phone: phoneNumber) { error in
+                    // Check for errors
+                    
+                    if error == nil {
+                        
+                        currentStep = .verification
+                    }
+                    else {
+                        
+                        // TODO: show an error
+                        
+                    }
+                }
+                
             } label: {
                 Text("Next")
             }

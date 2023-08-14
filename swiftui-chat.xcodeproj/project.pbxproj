@@ -133,8 +133,8 @@
 				0CEC1CE82A82713F004076E0 /* Info.plist */,
 				0C791AC22A83807700DA08D3 /* GoogleService-Info.plist */,
 				0CEC1CD42A820DCA004076E0 /* swiftui_chatApp.swift */,
-				0CEC1CD62A820DCA004076E0 /* RootView.swift */,
 				0CEC1CE22A820DDC004076E0 /* Views */,
+				0CEC1CD62A820DCA004076E0 /* RootView.swift */,
 				0CEC1CE32A820DF2004076E0 /* ViewModels */,
 				0CEC1CE42A820E07004076E0 /* Models */,
 				0CEC1CE52A820E1B004076E0 /* Services */,
@@ -446,6 +446,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "swiftui-chat/Info.plist";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Sync your contacts to chat with them";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -479,6 +480,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "swiftui-chat/Info.plist";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Sync your contacts to chat with them";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

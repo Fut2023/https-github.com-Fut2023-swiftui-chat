@@ -32,7 +32,7 @@ struct SyncContactsView: View {
             Spacer()
             
             Button {
-                 // Is onboarding
+                 // End onboarding
                 isOnboarding = false
                  
             } label: {

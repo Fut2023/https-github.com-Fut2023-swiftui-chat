@@ -18,7 +18,7 @@ struct CustomTabBar: View {
     
     var body: some View {
         
-        HStack {
+        HStack (alignment: .center) {
             
             Button {
                 // Switch to chats
@@ -33,6 +33,7 @@ struct CustomTabBar: View {
             
             Button {
                 // New chat
+                AuthViewModel.logout() // This is a temporary button assignment
             } label: {
                 
                 VStack (alignment: .center, spacing: 4){
