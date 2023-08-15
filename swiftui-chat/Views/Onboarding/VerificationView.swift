@@ -14,6 +14,8 @@ struct VerificationView: View {
     
     @Binding var currentStep: OnboardingStep
     
+    @Binding var isOnboarding: Bool
+    
     @State var verificationCode = ""
     
     var body: some View {
@@ -65,10 +67,21 @@ struct VerificationView: View {
                 // Send the verification code to Firebase
                 AuthViewModel.verifyCode(code: verificationCode) { error in
                     
+                    // Check for errors
                     if error == nil {
                         
-                        // Move to the next step
-                        currentStep = .profile
+                        // Check if this user has a profile
+                        DatabaseService().checkUserProfile { exists in
+                            
+                            if exists {
+                                // End the onboarding
+                                isOnboarding = false
+                            }
+                            else {
+                                // Move to the next step
+                                currentStep = .profile
+                            }
+                        }
                     }
                     else {
                         // TODO: show error message
@@ -88,6 +101,6 @@ struct VerificationView: View {
 
 struct VerificationView_Previews: PreviewProvider {
     static var previews: some View {
-        VerificationView(currentStep: .constant(.verification))
+        VerificationView(currentStep: .constant(.verification), isOnboarding: .constant(true))
     }
 }
